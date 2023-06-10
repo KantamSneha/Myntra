@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form And Open A New Page</title>
+        
+        <style>
+            body
+            {
+                background: black;
+            }
+            .div1
+            {
+                width:350px;
+                margin:auto;
+                margin:10 0 0 450px;
+                overflow:hidden;
+                padding:75px;
+                background: blueviolet;
+            }
+            h2
+            {
+                text-align:center;
+                padding:10px;
+                color: bisque;
+            }
+            label
+            {
+                color:white;
+                padding-left:10px;
+            }
+            .inputText
+            {
+               width:300px;
+               height:30px;
+               border:none;
+               border-radius:2px;
+               padding-left:8px; 
+            }
+            #logButton
+            {
+                width:300px;
+                height:30px;
+                border:none;
+                border-radius:10px;
+                padding-left:7px;
+                color:black;
+                font-size:16px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: wheat;">Myntra Login</h1>
+<div class="div1">
+<h2> LOGIN FORM </h2>
+<form name="myform" method="post">
+<label>User Name</label><br>
+<input type="text" name="Uname" class="inputText" placeholder="User Name">
+<br><br>
+<label>Password</label><br>
+<input type="Password" name="Pass" class="inputText" placeholder="Password">
+<br><br>
+<input type="button" name="log" id="logButton" value="Login" onclick="myfunction1()">
+<div style="color:white" class="signup-link">
+<br>
+Not a member? <a style="color:white" href="">Signup now</a>
+</div>
+
+<script>
+function myfunction1()
+{
+var un = document.forms["myform"]["Uname"].value;
+var pw = document.forms["myform"]["Pass"].value;
+if(un=="abcd" && pw=="1234")
+{
+window.location.href="book available.html";
+}
+else
+{
+alert("Invalid UserName and Password");
+}
+}
+</script>
+<br><br>
+</form>
+</div>
+</body>
+</html>       
+            </form>
+
+        </div>
+    </body>
+</html>
